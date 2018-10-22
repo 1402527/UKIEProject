@@ -28,8 +28,6 @@ public class SecretEnemyController : MonoBehaviour
     public float turn_speed = 5.0f;
     public float speed;
 
-    public Light spotlight;
-
     // Use this for initialization
     void Start()
     {
@@ -60,9 +58,6 @@ public class SecretEnemyController : MonoBehaviour
         agent.speed = speed;
 
         agent.destination = patrol_positions[current_position];
-
-        spotlight = enemy_parent.GetComponent<Light>();
-       
     }
 
     IEnumerator LookAround()
@@ -124,7 +119,7 @@ public class SecretEnemyController : MonoBehaviour
     public void TargetSpotted(GameObject target_loc)
     {
         Debug.Log("Enemy Spotted");
-        StartCoroutine(EnemyReveal());
+
         //anim.enabled = false;
 
         target = target_loc.transform;
@@ -161,13 +156,5 @@ public class SecretEnemyController : MonoBehaviour
 
         }
 
-    }
-
-    IEnumerator EnemyReveal()
-    {
-        print(Time.time);
-        spotlight.enabled = true;
-        yield return new WaitForSeconds(2);
-        print(Time.time);
     }
 }
