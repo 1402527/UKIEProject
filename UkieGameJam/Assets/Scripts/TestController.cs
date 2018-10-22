@@ -7,6 +7,7 @@ public class TestController : MonoBehaviour {
     public List<GameObject> convertedNpcList;
 
     GameObject selectedNPC;
+    GameObject selectedPleb;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +24,15 @@ public class TestController : MonoBehaviour {
         selectedNPC = null;
     }
 
+    void DeselectPleb()
+    {
+        if (selectedPleb != null)
+        {
+            selectedPleb.GetComponent<Pleb>().Selected(false);
+        }
+        selectedPleb = null;
+    }
+
     public void ConvertNPC()
     {
         RaycastHit hit = new RaycastHit();
@@ -34,47 +44,31 @@ public class TestController : MonoBehaviour {
             if(hit.collider.gameObject.tag == "NPC")
             {
                 Deselect();
+                DeselectPleb();
                 selectedNPC = hit.collider.gameObject;
                 selectedNPC.GetComponent<NavAgentController>().Selected(true);
-
-
+            }
+            else if(hit.collider.gameObject.tag == "Pleb")
+            {
+                DeselectPleb();
+                
+                if (selectedNPC != null)
+                {
+                    selectedPleb = hit.collider.gameObject;
+                    hit.collider.gameObject.GetComponent<Pleb>().Selected(true);
+                    selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
+                    //Deselect();
+                }
             }
             else if (hit.collider.gameObject.tag != "NonClickable" && selectedNPC != null)
             {
                 selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
-                Deselect();
+                //Deselect();
             }
-
-
-            //selectedNPC.GetComponent<ConversionNPC>().
-
-           
-
-            //selectedNPC.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isSelected;
-            //if (selectedNPC.GetComponent<ConversionNPC>().currentState == ConversionNPC.npcState.npcUnconverted)
-            //{
-            //    selectedNPC.GetComponent<ConversionNPC>().Converted();
-                
-            //    convertedNpcList.Add(selectedNPC); 
-            //}
-            //if (selectedNPC.GetComponent<ConversionNPC>().controlState == ConversionNPC.npcSelected.isSelected)
-            //{
-
-            //    selectedNPC.GetComponent<NavAgentController>().enabled = true;
-            //}
         }
-
-        
-
-        if (Input.GetMouseButtonDown(1))// && Physics.Raycast(ray, out hit))
+        else if (Input.GetMouseButtonDown(1))
         {
             Deselect();
-
-            //selectedNPC.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isUnselected;
-            //selectedNPC.GetComponent<NavAgentController>().enabled = false;
         }
-       
-
     }
-
 }

@@ -8,10 +8,18 @@ public class NavAgentController : MonoBehaviour {
     private Transform target;
     private NavMeshAgent agent;
 
-    public bool selected = false;
+    GameObject NPCparent;
+
+    public Transform agent_prefab;
+
+    //public bool selected = false;
+
+    public Color base_colour;
 
     public void Move(Vector3 point)
     {
+        //GetComponent<Renderer>().material.color = base_colour;
+
         agent = GetComponent<NavMeshAgent>();
         NavMeshPath path = new NavMeshPath();
 
@@ -25,6 +33,12 @@ public class NavAgentController : MonoBehaviour {
         }
     }
 
+    public void AddParent(GameObject parent)
+    {
+        NPCparent = parent;
+        GetComponent<Renderer>().material.color = base_colour;
+    }
+
     public void Selected(bool selected)
     {
         if(selected)
@@ -33,38 +47,20 @@ public class NavAgentController : MonoBehaviour {
         }
         else
         {
-            GetComponent<Renderer>().material.color = Color.white;
+            GetComponent<Renderer>().material.color = base_colour;
         }
     }
 
-	// Update is called once per frame
-	void Update ()
+    private void OnTriggerEnter(Collider other)
     {
-		//if(Input.GetMouseButtonDown(0))
-  //      {
-  //          agent = GetComponent<NavMeshAgent>();
-  //          NavMeshPath path = new NavMeshPath();
-
-  //          Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-  //          RaycastHit hitInfo;
-            
-  //          if (Physics.Raycast(ray, out hitInfo))
-  //          {
-  //              // Checks if the mouse is clicking on a building or unclickable surface
-  //              if (hitInfo.transform.tag != "NonClickable")
-  //              {
-                    
-  //                  agent.CalculatePath(hitInfo.point, path);
-                    
-  //                  // Ichecks if the path is reachable
-  //                  if (path.status != NavMeshPathStatus.PathPartial)
-  //                  {
-  //                      // Move agent to position
-  //                      GetComponent<NavMeshAgent>().SetDestination(hitInfo.point);
-  //                  }
-  //              }
-  //          }
-            
-  //      }
-	}
+        if(other.tag == "Pleb")
+        {
+            if (other.GetComponent<Pleb>().selected == true)
+            {
+                Transform temp = Instantiate(agent_prefab, other.transform.position, Quaternion.identity, NPCparent.transform);
+                temp.GetComponent<NavAgentController>().AddParent(NPCparent);
+                Destroy(other.gameObject);
+            }
+        }
+    }
 }
