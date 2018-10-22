@@ -11,7 +11,7 @@ public class NavAgentController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.GetButtonDown("Fire1"))
+		if(Input.GetMouseButtonDown(0))
         {
             agent = GetComponent<NavMeshAgent>();
             NavMeshPath path = new NavMeshPath();

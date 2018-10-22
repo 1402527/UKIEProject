@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 136319638402895092}
   - component: {fileID: 195379145059011606}
   - component: {fileID: 114090861254534146}
-  - component: {fileID: 114031091251593884}
+  - component: {fileID: 114718006646267586}
   m_Layer: 8
   m_Name: Agent
   m_TagString: Untagged
@@ -87,17 +87,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1434557011815148}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114031091251593884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1434557011815148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3a3f716ebe9f3c4aaa33df4a2a5c039, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114090861254534146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +98,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e153c69e80238e7489969e11019e5efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114718006646267586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434557011815148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97d512afa3788b48b48b299624c3b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grey: {fileID: 2100000, guid: 0f6056f8540ce4f4abb576a2532a5cde, type: 2}
+  red: {fileID: 2100000, guid: 9f909e3e2af95a64b8d0ce9cba1d3e8d, type: 2}
+  currentlySelected: 0
 --- !u!136 &136319638402895092
 CapsuleCollider:
   m_ObjectHideFlags: 1

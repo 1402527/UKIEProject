@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ClickOn : MonoBehaviour {
     [SerializeField]
@@ -26,10 +27,14 @@ public class ClickOn : MonoBehaviour {
         if(currentlySelected == false)
         {
             myRend.material = grey;
+            //GetComponent<NavAgentController>().enabled = false;
+            GetComponent<NavMeshAgent>().speed = 0.0f;
         }
         else
         {
             myRend.material = red;
+           // GetComponent<NavAgentController>().enabled = true;
+            GetComponent<NavMeshAgent>().speed = 3.5f;
         }
 	}
 }
