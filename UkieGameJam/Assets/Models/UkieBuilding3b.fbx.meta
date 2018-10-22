@@ -65,6 +65,10 @@ ModelImporter:
     100118: transform8
     100120: transform9
     100122: //RootNode
+    100124: pCube47
+    100126: pCube48
+    100128: transform31
+    100130: transform32
     400000: pCube1
     400002: pCube11
     400004: pCube12
@@ -127,10 +131,17 @@ ModelImporter:
     400118: transform8
     400120: transform9
     400122: //RootNode
+    400124: pCube47
+    400126: pCube48
+    400128: transform31
+    400130: transform32
     2100000: lambert1
     2300000: pCube46
+    2300002: pCube48
     3300000: pCube46
+    3300002: pCube48
     4300000: pCube46
+    4300002: pCube48
   externalObjects: {}
   materials:
     importMaterials: 1
