@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NonClickable
   - Agent
+  - NPC
   layers:
   - Default
   - TransparentFX

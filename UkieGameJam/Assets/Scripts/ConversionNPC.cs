@@ -10,7 +10,6 @@ public class ConversionNPC : MonoBehaviour {
     {
         npcUnconverted,
         npcConverted
-
     }
 
     public enum npcSelected
@@ -22,6 +21,8 @@ public class ConversionNPC : MonoBehaviour {
     public npcState currentState;
     public npcSelected controlState;
 
+    public bool selected = false;
+
     // Use this for initialization
     void Start()
     {
@@ -30,6 +31,11 @@ public class ConversionNPC : MonoBehaviour {
         //Fetch the Renderer from the GameObject
         rend = GetComponent<Renderer>();
 
+    }
+
+    public void ToggleSelected()
+    {
+        selected = !selected;
     }
 
     private void Update()

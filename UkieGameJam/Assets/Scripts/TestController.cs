@@ -6,10 +6,21 @@ public class TestController : MonoBehaviour {
 
     public List<GameObject> convertedNpcList;
 
+    GameObject selectedNPC;
+
     // Update is called once per frame
     void Update()
     {
         ConvertNPC();
+    }
+
+    void Deselect()
+    {
+        if (selectedNPC != null)
+        {
+            selectedNPC.GetComponent<NavAgentController>().Selected(false);
+        }
+        selectedNPC = null;
     }
 
     public void ConvertNPC()
@@ -18,31 +29,52 @@ public class TestController : MonoBehaviour {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "NPC")
+        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit))
         {
-            hit.collider.gameObject.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isSelected;
-            if (hit.collider.gameObject.GetComponent<ConversionNPC>().currentState == ConversionNPC.npcState.npcUnconverted)
+            if(hit.collider.gameObject.tag == "NPC")
             {
-                hit.collider.gameObject.GetComponent<ConversionNPC>().Converted();
-                
-                convertedNpcList.Add(hit.collider.gameObject); 
+                Deselect();
+                selectedNPC = hit.collider.gameObject;
+                selectedNPC.GetComponent<NavAgentController>().Selected(true);
+
+
             }
-            
+            else if (hit.collider.gameObject.tag != "NonClickable" && selectedNPC != null)
+            {
+                selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
+                Deselect();
+            }
+
+
+            //selectedNPC.GetComponent<ConversionNPC>().
+
+           
+
+            //selectedNPC.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isSelected;
+            //if (selectedNPC.GetComponent<ConversionNPC>().currentState == ConversionNPC.npcState.npcUnconverted)
+            //{
+            //    selectedNPC.GetComponent<ConversionNPC>().Converted();
+                
+            //    convertedNpcList.Add(selectedNPC); 
+            //}
+            //if (selectedNPC.GetComponent<ConversionNPC>().controlState == ConversionNPC.npcSelected.isSelected)
+            //{
+
+            //    selectedNPC.GetComponent<NavAgentController>().enabled = true;
+            //}
         }
 
-        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "NPC" && hit.collider.gameObject.GetComponent<ConversionNPC>().controlState == ConversionNPC.npcSelected.isSelected)
-        {
-          
-            hit.collider.gameObject.GetComponent<NavAgentController>().enabled = true;
-        }
+        
 
-        if (Input.GetMouseButtonDown(1) && Physics.Raycast(ray, out hit))
+        if (Input.GetMouseButtonDown(1))// && Physics.Raycast(ray, out hit))
         {
-            hit.collider.gameObject.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isUnselected;
-            hit.collider.gameObject.GetComponent<NavAgentController>().enabled = false;
+            Deselect();
+
+            //selectedNPC.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isUnselected;
+            //selectedNPC.GetComponent<NavAgentController>().enabled = false;
         }
        
 
-        }
+    }
 
 }
