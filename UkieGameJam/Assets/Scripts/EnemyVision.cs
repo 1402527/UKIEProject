@@ -16,7 +16,7 @@ public class EnemyVision : MonoBehaviour
     
     private void OnTriggerStay(Collider col)
     {
-        if (col.tag == "Agent")
+        if (col.tag == "NPC")
         {
             RaycastHit hit;
 
@@ -24,7 +24,7 @@ public class EnemyVision : MonoBehaviour
 
             if (Physics.Raycast(enemy.GetComponent<EnemyController>().enemy.transform.position, dir * 10.0f, out hit, Mathf.Infinity))
             {
-                if (hit.transform.tag == "Agent")
+                if (hit.transform.tag == "NPC")
                 {
                     enemy.GetComponent<EnemyController>().TargetSpotted(col.gameObject);
                 }

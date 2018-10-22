@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
     public float look_around_chance = 0.5f;
 
     public float turn_speed = 5.0f;
-    public float speed = 5.0f;
+    public float speed;
 
     // Use this for initialization
     void Start ()
@@ -54,6 +54,8 @@ public class EnemyController : MonoBehaviour
         }
 
         agent = enemy.GetComponent<NavMeshAgent>();
+
+        agent.speed = speed;
 
         agent.destination = patrol_positions[current_position];
     }
