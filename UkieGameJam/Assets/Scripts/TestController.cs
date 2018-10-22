@@ -9,13 +9,6 @@ public class TestController : MonoBehaviour {
     GameObject selectedNPC;
     GameObject selectedPleb;
 
-    public GameObject FOG;
-
-    private void Start()
-    {
-        FOG.SetActive(true);
-    }
-
     // Update is called once per frame
     void Update()
     {

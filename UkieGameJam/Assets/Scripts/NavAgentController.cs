@@ -16,11 +16,6 @@ public class NavAgentController : MonoBehaviour {
 
     public Color base_colour;
 
-    private void Start()
-    {
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
-    }
-
     public void Move(Vector3 point)
     {
         //GetComponent<Renderer>().material.color = base_colour;
@@ -48,11 +43,11 @@ public class NavAgentController : MonoBehaviour {
     {
         if(selected)
         {
-            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
+            GetComponent<Renderer>().material.color = Color.green;
         }
         else
         {
-            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.green);
+            GetComponent<Renderer>().material.color = base_colour;
         }
     }
 
