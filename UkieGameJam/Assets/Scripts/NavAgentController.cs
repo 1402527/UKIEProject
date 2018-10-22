@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavAgentController : MonoBehaviour {
+public class NavAgentController : MonoBehaviour
+{
 
     private Transform target;
     private NavMeshAgent agent;
@@ -15,6 +16,11 @@ public class NavAgentController : MonoBehaviour {
     //public bool selected = false;
 
     public Color base_colour;
+
+    private void Start()
+    {
+        GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
+    }
 
     public void Move(Vector3 point)
     {
@@ -36,18 +42,18 @@ public class NavAgentController : MonoBehaviour {
     public void AddParent(GameObject parent)
     {
         NPCparent = parent;
-        GetComponent<Renderer>().material.color = base_colour;
+        GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
     }
 
     public void Selected(bool selected)
     {
         if(selected)
         {
-            GetComponent<Renderer>().material.color = Color.green;
+            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
         }
         else
         {
-            GetComponent<Renderer>().material.color = base_colour;
+            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
         }
     }
 
