@@ -20,23 +20,29 @@ public class TestController : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "NPC")
         {
-
+            hit.collider.gameObject.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isSelected;
             if (hit.collider.gameObject.GetComponent<ConversionNPC>().currentState == ConversionNPC.npcState.npcUnconverted)
             {
                 hit.collider.gameObject.GetComponent<ConversionNPC>().Converted();
-                convertedNpcList.Add(hit.collider.gameObject);
+                
+                convertedNpcList.Add(hit.collider.gameObject); 
             }
+            
+        }
 
-            if (hit.collider.gameObject.GetComponent<ConversionNPC>().currentState == ConversionNPC.npcState.npcConverted)
-            {
-                //Take Control Here
+        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "NPC" && hit.collider.gameObject.GetComponent<ConversionNPC>().controlState == ConversionNPC.npcSelected.isSelected)
+        {
+          
+            hit.collider.gameObject.GetComponent<NavAgentController>().enabled = true;
+        }
 
-                hit.collider.gameObject.GetComponent<NavAgentController>().enabled = true;
-                Debug.Log("Already Converted foo");
-            }
-
+        if (Input.GetMouseButtonDown(1) && Physics.Raycast(ray, out hit))
+        {
+            hit.collider.gameObject.GetComponent<ConversionNPC>().controlState = ConversionNPC.npcSelected.isUnselected;
+            hit.collider.gameObject.GetComponent<NavAgentController>().enabled = false;
+        }
+       
 
         }
 
-    }
 }

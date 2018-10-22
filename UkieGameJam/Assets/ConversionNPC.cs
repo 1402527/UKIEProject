@@ -12,16 +12,29 @@ public class ConversionNPC : MonoBehaviour {
         npcConverted
 
     }
+
+    public enum npcSelected
+    {
+        isSelected,
+        isUnselected
+    }
+
     public npcState currentState;
+    public npcSelected controlState;
 
     // Use this for initialization
     void Start()
     {
         currentState = npcState.npcUnconverted;
-
+        controlState = npcSelected.isUnselected;
         //Fetch the Renderer from the GameObject
         rend = GetComponent<Renderer>();
 
+    }
+
+    private void Update()
+    {
+        
     }
 
     // Update is called once per frame
