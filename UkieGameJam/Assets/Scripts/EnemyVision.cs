@@ -44,7 +44,6 @@ public class EnemyVision : MonoBehaviour
                 {
                     enemy.GetComponent<EnemyController>().TargetSpotted(col.gameObject);
                 }
-
             }
         }
     }
