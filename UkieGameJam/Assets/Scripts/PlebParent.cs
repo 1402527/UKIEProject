@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlebParent : MonoBehaviour {
 
@@ -33,6 +34,7 @@ public class PlebParent : MonoBehaviour {
         if(converted_count >= converted_target)
         {
             Debug.Log("WIN");
+            SceneManager.LoadScene(0);
         }
 
     }

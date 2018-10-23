@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCparent : MonoBehaviour
 {
@@ -25,6 +26,10 @@ public class NPCparent : MonoBehaviour
     public void Remove(GameObject ded)
     {
         totalNPCs.Remove(ded);
-
+        if(totalNPCs.Count == 0)
+        {
+            Debug.Log("You Lose");
+            SceneManager.LoadScene(0);
+        }
     }
 }
