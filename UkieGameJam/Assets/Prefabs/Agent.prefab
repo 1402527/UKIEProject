@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 33182262942618618}
   - component: {fileID: 23524226900627096}
   - component: {fileID: 136217729072165078}
-  - component: {fileID: 114374491203867666}
   - component: {fileID: 195852682436010420}
   - component: {fileID: 114246203065471416}
   - component: {fileID: 135712685772244724}
@@ -72,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1763511045451590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.01855, y: 8.624254, z: 16.82768}
+  m_LocalPosition: {x: 0.8780923, y: 6.948214e-17, z: -15.645988}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4437582192029448}
@@ -212,21 +211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent_prefab: {fileID: 4473120418916808}
   base_colour: {r: 0.05346274, g: 0.5943396, b: 0, a: 0}
---- !u!114 &114374491203867666
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1763511045451590}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea0171edc71fbe24197b14f2db279ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rend: {fileID: 0}
-  currentState: 0
-  controlState: 0
-  selected: 0
 --- !u!135 &135276790257402220
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -273,7 +257,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

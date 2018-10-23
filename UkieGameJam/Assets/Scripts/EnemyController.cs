@@ -127,12 +127,15 @@ public class EnemyController : MonoBehaviour
         current_state = State.CHASE;
         agent.destination = target.position;
         enemy.transform.LookAt(target);
+
+        
     }
 
 	// Update is called once per frame
 	void Update ()
     {
-        switch(current_state)
+        enemy_parent.GetComponent<EnemyVision>().Chasing(current_state);
+        switch (current_state)
         {
             case State.SEARCH:
                 if (agent.remainingDistance < 0.2f)
@@ -144,6 +147,7 @@ public class EnemyController : MonoBehaviour
                 if (agent.remainingDistance < 0.2f)
                 {
                     StartCoroutine(LookAround());
+                    
                     //current_state = State.LOOK;
                 }
                 break;
