@@ -28,6 +28,16 @@ public class SecretEnemyController : MonoBehaviour
     public float turn_speed = 5.0f;
     public float speed;
 
+    public Light spotlight;
+    public BoxCollider currentCollider;
+    public Renderer capsule;
+    public Material surprise;
+    float duration = 50.0f;
+    bool playerSeen = true;
+    Vector3 newSize;
+    Vector3 newCenter;
+
+
     // Use this for initialization
     void Start()
     {
@@ -58,6 +68,15 @@ public class SecretEnemyController : MonoBehaviour
         agent.speed = speed;
 
         agent.destination = patrol_positions[current_position];
+
+        spotlight = enemy_parent.GetComponent<Light>();
+
+        capsule = enemy.GetComponent<MeshRenderer>();
+
+        currentCollider = enemy_parent.GetComponent<BoxCollider>();
+
+        newSize = new Vector3(5.0f, 1.0f, 50.0f);
+        newCenter = new Vector3(0.0f, 0.0f,25.0f);
     }
 
     IEnumerator LookAround()
@@ -119,19 +138,33 @@ public class SecretEnemyController : MonoBehaviour
     public void TargetSpotted(GameObject target_loc)
     {
         Debug.Log("Enemy Spotted");
+        spotlight.enabled = true;
+        //capsule.material = surprise;
 
+        float lerp = Mathf.PingPong(Time.time, duration) / duration;
+        capsule.material.Lerp(capsule.material, surprise, lerp);
+
+        if (playerSeen == true)
+        {
+            StartCoroutine(revealWait(target_loc));
+        }
+        else
+        {
+            target = target_loc.transform;
+
+            current_state = State.CHASE;
+            agent.destination = target.position;
+            enemy.transform.LookAt(target);
+        }
         //anim.enabled = false;
 
-        target = target_loc.transform;
-
-        current_state = State.CHASE;
-        agent.destination = target.position;
-        enemy.transform.LookAt(target);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        enemy_parent.GetComponent<EnemyVision>().Chasing(current_state);
         switch (current_state)
         {
             case State.SEARCH:
@@ -144,6 +177,7 @@ public class SecretEnemyController : MonoBehaviour
                 if (agent.remainingDistance < 0.2f)
                 {
                     StartCoroutine(LookAround());
+                    playerSeen = false;
                     //current_state = State.LOOK;
                 }
                 break;
@@ -156,5 +190,28 @@ public class SecretEnemyController : MonoBehaviour
 
         }
 
+    }
+
+    IEnumerator revealWait(GameObject target_loc)
+    {
+        print(Time.time);
+        agent.speed = 0.0f;
+        currentCollider.size = newSize;
+        currentCollider.center = newCenter;
+
+        yield return new WaitForSeconds(1);
+
+        playerSeen = false;
+
+        agent.speed = 3.5f;
+
+        target = target_loc.transform;
+
+        current_state = State.CHASE;
+        agent.destination = target.position;
+        enemy.transform.LookAt(target);
+      
+
+        print(Time.time);
     }
 }
