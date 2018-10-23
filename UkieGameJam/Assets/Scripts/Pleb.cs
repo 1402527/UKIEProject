@@ -60,6 +60,7 @@ public class Pleb : MonoBehaviour
     public void Convert()
     {
         sphere.SetActive(true);
+        Selected(false);
     }
 
     public void Selected(bool b)
