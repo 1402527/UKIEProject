@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 68341495}
   m_Layer: 0
   m_Name: pCube14 (14)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -528,7 +528,7 @@ Transform:
   - {fileID: 307044857}
   - {fileID: 1842073330}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126125703 stripped
 GameObject:
@@ -842,7 +842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &181347066 stripped
 GameObject:
@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 200892467}
   m_Layer: 0
   m_Name: pCube14 (18)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -1127,7 +1127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4699363433036030, guid: 1e747b53cb28c1440a25fb84c743d7bc, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1111272949806356, guid: 1e747b53cb28c1440a25fb84c743d7bc, type: 2}
       propertyPath: m_Name
@@ -1835,6 +1835,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -1976,7 +1984,7 @@ GameObject:
   - component: {fileID: 307044859}
   m_Layer: 0
   m_Name: pCube14 (12)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -2730,6 +2738,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -3422,6 +3438,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -3761,7 +3785,7 @@ GameObject:
   - component: {fileID: 440724237}
   m_Layer: 0
   m_Name: pCube14 (10)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -4498,6 +4522,14 @@ Prefab:
     - target: {fileID: 100136, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
@@ -5322,6 +5354,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -5948,6 +5988,14 @@ Prefab:
     - target: {fileID: 100120, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
@@ -10886,7 +10934,7 @@ GameObject:
   - component: {fileID: 701231646}
   m_Layer: 0
   m_Name: pCube14 (9)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -11729,6 +11777,14 @@ Prefab:
     - target: {fileID: 100128, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
@@ -16444,7 +16500,7 @@ GameObject:
   - component: {fileID: 773666516}
   m_Layer: 0
   m_Name: pCube14 (17)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -17198,6 +17254,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -17275,7 +17339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4068383303861972, guid: 36e22ee498b09b74c9546692f505c176, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1593224333405904, guid: 36e22ee498b09b74c9546692f505c176, type: 2}
       propertyPath: m_IsActive
@@ -17932,6 +17996,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -18167,7 +18239,7 @@ Transform:
   - {fileID: 1083398167}
   - {fileID: 914936021}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865731962 stripped
 GameObject:
@@ -18371,7 +18443,7 @@ GameObject:
   - component: {fileID: 934312604}
   m_Layer: 0
   m_Name: pCube14 (5)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -19049,6 +19121,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
   m_IsPrefabParent: 0
@@ -19196,7 +19276,7 @@ GameObject:
   - component: {fileID: 972450973}
   m_Layer: 0
   m_Name: pCube14 (1)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -19702,6 +19782,14 @@ Prefab:
     - target: {fileID: 100040, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
@@ -20661,6 +20749,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -20947,6 +21043,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
   m_IsPrefabParent: 0
@@ -21220,7 +21324,7 @@ GameObject:
   - component: {fileID: 1092424604}
   m_Layer: 0
   m_Name: pCube14 (6)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -26118,7 +26222,7 @@ GameObject:
   - component: {fileID: 1152003678}
   m_Layer: 0
   m_Name: pCube14 (15)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -26313,7 +26417,7 @@ GameObject:
   - component: {fileID: 1156799294}
   m_Layer: 0
   m_Name: pCube14 (2)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -26686,6 +26790,14 @@ Prefab:
     - target: {fileID: 100002, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
@@ -27588,6 +27700,14 @@ Prefab:
     - target: {fileID: 100080, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
@@ -32578,6 +32698,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a9bb298672778145b7668677f5db2b2, type: 3}
   m_IsPrefabParent: 0
@@ -33261,6 +33389,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -33910,6 +34046,14 @@ Prefab:
     - target: {fileID: 100030, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
@@ -34678,6 +34822,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -34816,7 +34968,7 @@ GameObject:
   - component: {fileID: 1383216204}
   m_Layer: 0
   m_Name: pCube14 (8)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -34946,19 +35098,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0004450501
+      value: -0.0031191837
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9998841
+      value: 0.99987936
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.015218628
+      value: 0.015218555
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0000067738347
+      value: 0.000047475183
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_RootOrder
@@ -34966,7 +35118,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 179.99998
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalScale.x
@@ -34982,7 +35134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.051000003
+      value: -0.35700002
       objectReference: {fileID: 0}
     - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_Name
@@ -35587,6 +35739,14 @@ Prefab:
     - target: {fileID: 100018, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
@@ -36388,6 +36548,14 @@ Prefab:
     - target: {fileID: 100142, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
@@ -37421,6 +37589,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -38015,6 +38191,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
   m_IsPrefabParent: 0
@@ -38134,7 +38318,7 @@ Light:
   m_SpotAngle: 43.42691
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -38481,6 +38665,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
   m_IsPrefabParent: 0
@@ -38520,7 +38708,7 @@ GameObject:
   - component: {fileID: 1688744809}
   m_Layer: 0
   m_Name: pCube14 (19)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -43376,7 +43564,7 @@ GameObject:
   - component: {fileID: 1727345863}
   m_Layer: 0
   m_Name: pCube14 (16)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -44431,6 +44619,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -45205,6 +45401,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8764c228b085c08409a8a83d1e392f00, type: 3}
   m_IsPrefabParent: 0
@@ -45277,7 +45481,7 @@ GameObject:
   - component: {fileID: 1842073332}
   m_Layer: 0
   m_Name: pCube14 (13)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -45382,7 +45586,7 @@ GameObject:
   - component: {fileID: 1843100867}
   m_Layer: 0
   m_Name: pCube14 (3)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -46185,6 +46389,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -46206,7 +46418,7 @@ GameObject:
   - component: {fileID: 1889789431}
   m_Layer: 0
   m_Name: pCube14
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -46880,6 +47092,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6fb044e3d645674c9cbc02184abec50, type: 3}
   m_IsPrefabParent: 0
@@ -47473,6 +47693,14 @@ Prefab:
     - target: {fileID: 100020, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
@@ -48114,6 +48342,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
   m_IsPrefabParent: 0
@@ -48725,6 +48961,14 @@ Prefab:
     - target: {fileID: 100090, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
@@ -49376,6 +49620,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -49397,7 +49649,7 @@ GameObject:
   - component: {fileID: 1956884527}
   m_Layer: 0
   m_Name: pCube14 (4)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -50144,6 +50396,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
   m_IsPrefabParent: 0
@@ -50502,6 +50762,14 @@ Prefab:
     - target: {fileID: 100016, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d93ccabe6406044289dde734589c16b, type: 3}
@@ -51229,6 +51497,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -51879,6 +52155,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100144, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75ca64cbbb34b024e9ed72ea438eb5d6, type: 3}
   m_IsPrefabParent: 0
@@ -51900,7 +52184,7 @@ GameObject:
   - component: {fileID: 2055904596}
   m_Layer: 0
   m_Name: pCube14 (11)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -52188,7 +52472,7 @@ GameObject:
   - component: {fileID: 2092743592}
   m_Layer: 0
   m_Name: pCube14 (7)
-  m_TagString: Untagged
+  m_TagString: NonClickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -52889,6 +53173,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
   m_IsPrefabParent: 0
@@ -53478,6 +53770,14 @@ Prefab:
     - target: {fileID: 100114, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100126, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
+      propertyPath: m_TagString
+      value: NonClickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4255c02b3e5194ca1649a600abb17b, type: 3}
