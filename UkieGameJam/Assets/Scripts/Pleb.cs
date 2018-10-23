@@ -43,6 +43,9 @@ public class Pleb : MonoBehaviour
 
         agent = GetComponent<NavMeshAgent>();
         agent.destination = patrol_positions[current_position];
+
+        speed = Random.Range(2.0f, 5.0f);
+
         agent.speed = speed;
     }
 
@@ -60,6 +63,7 @@ public class Pleb : MonoBehaviour
     public void Convert()
     {
         sphere.SetActive(true);
+        Selected(false);
     }
 
     public void Selected(bool b)
