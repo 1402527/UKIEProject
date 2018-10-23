@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
     void Start ()
     {
         current_position = 0;
-
+         
         current_state = State.SEARCH;
 
         Transform[] children = GetComponentsInChildren<Transform>();
