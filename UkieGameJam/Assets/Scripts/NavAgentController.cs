@@ -63,9 +63,10 @@ public class NavAgentController : MonoBehaviour
         {
             if (other.GetComponent<Pleb>().selected == true)
             {
-                Transform temp = Instantiate(agent_prefab, other.transform.position, Quaternion.identity, NPCparent.transform);
-                temp.GetComponent<NavAgentController>().AddParent(NPCparent);
-                Destroy(other.gameObject);
+                other.GetComponent<Pleb>().Convert();
+                //Transform temp = Instantiate(agent_prefab, other.transform.position, Quaternion.identity, NPCparent.transform);
+                //temp.GetComponent<NavAgentController>().AddParent(NPCparent);
+                //Destroy(other.gameObject);
             }
         }
     }

@@ -51,6 +51,7 @@ public class EnemyController : MonoBehaviour
             {
                 enemy_parent = t.gameObject;
             }
+            Destroy(t.gameObject);
         }
 
         agent = enemy.GetComponent<NavMeshAgent>();

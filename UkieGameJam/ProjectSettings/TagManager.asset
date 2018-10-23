@@ -8,6 +8,10 @@ TagManager:
   - Agent
   - NPC
   - Pleb
+  - Route
+  - Enemy
+  - EnemyParent
+  - PlebSphere
   layers:
   - Default
   - TransparentFX
