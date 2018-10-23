@@ -6,12 +6,27 @@ public class SecretEnemyVision : MonoBehaviour
 {
 
     public GameObject enemy;
-    public Transform infront;
-
+    Light torch;
     // Use this for initialization
     void Start()
     {
+        torch = GetComponent<Light>();
+    }
 
+    public void Chasing(State state)
+    {
+        switch (state)
+        {
+            case State.SEARCH:
+                torch.color = Color.cyan;
+                break;
+            case State.CHASE:
+                torch.color = Color.red;
+                break;
+            case State.LOOK:
+                torch.color = Color.yellow;
+                break;
+        }
     }
 
     private void OnTriggerStay(Collider col)
@@ -31,11 +46,5 @@ public class SecretEnemyVision : MonoBehaviour
 
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
