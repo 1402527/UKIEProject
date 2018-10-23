@@ -9,7 +9,7 @@ public class NavAgentController : MonoBehaviour
     private Transform target;
     private NavMeshAgent agent;
 
-    GameObject NPCparent;
+    public GameObject this_parent;
 
     public Transform agent_prefab;
 
@@ -41,7 +41,7 @@ public class NavAgentController : MonoBehaviour
 
     public void AddParent(GameObject parent)
     {
-        NPCparent = parent;
+        this_parent = parent;
         GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
     }
 
@@ -69,5 +69,18 @@ public class NavAgentController : MonoBehaviour
                 //Destroy(other.gameObject);
             }
         }
+        else if(other.tag == "Enemy")
+        {
+            Debug.Log("lol");
+
+            if (other.gameObject.GetComponent<LilEnemyScript>() != null)
+            {
+                other.gameObject.GetComponent<LilEnemyScript>().Captured();
+            }
+
+            this_parent.SendMessage("Remove", this.gameObject);
+            Destroy(this.gameObject);
+        }
+
     }
 }

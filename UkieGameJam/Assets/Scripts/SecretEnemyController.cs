@@ -192,6 +192,11 @@ public class SecretEnemyController : MonoBehaviour
 
     }
 
+    public void Captured()
+    {
+        StartCoroutine(LookAround());
+    }
+
     IEnumerator revealWait(GameObject target_loc)
     {
         print(Time.time);
