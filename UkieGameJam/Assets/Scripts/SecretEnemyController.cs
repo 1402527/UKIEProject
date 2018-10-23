@@ -164,7 +164,7 @@ public class SecretEnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemy_parent.GetComponent<EnemyVision>().Chasing(current_state);
+        enemy_parent.GetComponent<SecretEnemyVision>().Chasing(current_state);
         switch (current_state)
         {
             case State.SEARCH:
