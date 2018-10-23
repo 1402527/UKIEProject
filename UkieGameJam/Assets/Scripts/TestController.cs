@@ -63,7 +63,7 @@ public class TestController : MonoBehaviour {
             else if (hit.collider.gameObject.tag != "NonClickable" && selectedNPC != null)
             {
                 selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
-                //Deselect();
+                DeselectPleb();
             }
         }
         else if (Input.GetMouseButtonDown(1))
