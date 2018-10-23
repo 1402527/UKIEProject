@@ -52,6 +52,7 @@ public class SecretEnemyController : MonoBehaviour
             if (t.tag == "Route")
             {
                 patrol_positions.Add(t.position);
+                Destroy(t.gameObject);
             }
             else if (t.tag == "Enemy")
             {
@@ -190,6 +191,11 @@ public class SecretEnemyController : MonoBehaviour
 
         }
 
+    }
+
+    public void Captured()
+    {
+        StartCoroutine(LookAround());
     }
 
     IEnumerator revealWait(GameObject target_loc)

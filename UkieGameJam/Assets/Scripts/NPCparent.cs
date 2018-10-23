@@ -21,4 +21,10 @@ public class NPCparent : MonoBehaviour
             }
         }
     }
+
+    public void Remove(GameObject ded)
+    {
+        totalNPCs.Remove(ded);
+
+    }
 }

@@ -62,8 +62,17 @@ public class EnemyController : MonoBehaviour
         agent.destination = patrol_positions[current_position];
     }
 	
+    public void Captured()
+    {
+        Debug.Log("sup");
+        current_state = State.LOOK;
+        StartCoroutine(LookAround());
+    }
+
     IEnumerator LookAround()
     {
+        Debug.Log("look");
+
         current_state = State.LOOK;       
         float vel = agent.speed;
 
@@ -119,18 +128,12 @@ public class EnemyController : MonoBehaviour
     }
 
     public void TargetSpotted(GameObject target_loc)
-    {
-        Debug.Log("Enemy Spotted");
-
-        //anim.enabled = false;
-
+    {      
         target = target_loc.transform;
 
         current_state = State.CHASE;
         agent.destination = target.position;
-        enemy.transform.LookAt(target);
-
-        
+        enemy.transform.LookAt(target);    
     }
 
 	// Update is called once per frame
