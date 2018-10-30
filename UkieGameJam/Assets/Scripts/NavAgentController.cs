@@ -13,6 +13,8 @@ public class NavAgentController : MonoBehaviour
 
     public Transform agent_prefab;
 
+    LineRenderer line;
+
     //public bool selected = false;
 
     public Color base_colour;
@@ -20,6 +22,7 @@ public class NavAgentController : MonoBehaviour
     private void Start()
     {
         GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
+        line = GetComponent<LineRenderer>();
     }
 
     public void Move(Vector3 point)
@@ -29,6 +32,8 @@ public class NavAgentController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         NavMeshPath path = new NavMeshPath();
 
+        
+
         agent.CalculatePath(point, path);
 
         // Ichecks if the path is reachable
@@ -36,6 +41,10 @@ public class NavAgentController : MonoBehaviour
         {
             // Move agent to position
             GetComponent<NavMeshAgent>().SetDestination(point);
+
+            line.positionCount = path.corners.Length;
+
+            line.SetPositions(path.corners);
         }
     }
 
@@ -82,5 +91,13 @@ public class NavAgentController : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+    }
+
+    private void Update()
+    {
+        if(agent.remainingDistance < 0.1f)
+        {
+            line.positionCount = 0;
+        }
     }
 }

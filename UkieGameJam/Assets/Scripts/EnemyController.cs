@@ -42,7 +42,7 @@ public class EnemyController : MonoBehaviour
             if(t.tag == "Route")
             {
                 patrol_positions.Add(t.position);
-                Destroy(t.gameObject);
+                //Destroy(t.gameObject);
             }
             else if(t.tag == "Enemy")
             {
@@ -78,7 +78,15 @@ public class EnemyController : MonoBehaviour
 
         agent.speed = 0.0f;
 
-        yield return new WaitForSeconds(4.0f);
+        float time = 0.0f;
+
+        while (time < 4.0f && current_state != State.CHASE)
+        {
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        //yield return new WaitForSeconds(4.0f);
 
         agent.speed = speed;
 

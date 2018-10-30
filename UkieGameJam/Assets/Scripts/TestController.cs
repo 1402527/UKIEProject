@@ -9,6 +9,8 @@ public class TestController : MonoBehaviour {
     GameObject selectedNPC;
     GameObject selectedPleb;
 
+    public ParticleSystem p;
+
     // Update is called once per frame
     void Update()
     {
@@ -41,12 +43,16 @@ public class TestController : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit))
         {
-            if(hit.collider.gameObject.tag == "NPC")
+            Vector3 pos = hit.point;
+            pos.y += 0.3f;
+
+            if (hit.collider.gameObject.tag == "NPC")
             {
                 Deselect();
                 DeselectPleb();
                 selectedNPC = hit.collider.gameObject;
                 selectedNPC.GetComponent<NavAgentController>().Selected(true);
+                Instantiate(p, pos, Quaternion.identity);
             }
             else if(hit.collider.gameObject.tag == "Pleb")
             {
@@ -59,11 +65,13 @@ public class TestController : MonoBehaviour {
                     selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
                     //Deselect();
                 }
+                Instantiate(p, pos, Quaternion.identity);
             }
             else if (hit.collider.gameObject.tag != "NonClickable" && selectedNPC != null)
             {
                 selectedNPC.GetComponent<NavAgentController>().Move(hit.point);
                 DeselectPleb();
+                Instantiate(p, pos, Quaternion.identity);
             }
         }
         else if (Input.GetMouseButtonDown(1))
