@@ -42,7 +42,7 @@ public class EnemyController : MonoBehaviour
             if(t.tag == "Route")
             {
                 patrol_positions.Add(t.position);
-                //Destroy(t.gameObject);
+                Destroy(t.gameObject);
             }
             else if(t.tag == "Enemy")
             {

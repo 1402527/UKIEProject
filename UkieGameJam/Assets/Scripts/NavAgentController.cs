@@ -15,6 +15,8 @@ public class NavAgentController : MonoBehaviour
 
     LineRenderer line;
 
+    public Transform min, max;
+
     //public bool selected = false;
 
     public Color base_colour;
@@ -95,9 +97,13 @@ public class NavAgentController : MonoBehaviour
 
     private void Update()
     {
-        if(agent.remainingDistance < 0.1f)
-        {
-            line.positionCount = 0;
-        }
+        //if(agent.remainingDistance < 0.1f)
+        //{
+       //     line.positionCount = 0;
+        //}
+
+        //Vector3 pos = new Vector3((transform.position.x - min.position.x) / (max.position.x - min.position.x), 0.0f, (transform.position.z - min.position.z) / (max.position.z - min.position.z));
+        //Debug.Log(pos);
+
     }
 }

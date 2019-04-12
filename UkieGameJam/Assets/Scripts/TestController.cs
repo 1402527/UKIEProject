@@ -11,6 +11,13 @@ public class TestController : MonoBehaviour {
 
     public ParticleSystem p;
 
+    public LayerMask mask;
+
+    private void Start()
+    {
+        mask = ~mask;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,7 +48,7 @@ public class TestController : MonoBehaviour {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit))
+        if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit, 100.0f, mask))
         {
             Vector3 pos = hit.point;
             pos.y += 0.3f;
